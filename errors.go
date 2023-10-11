@@ -1,4 +1,4 @@
-package errors
+package shared_errors
 
 import (
 	"fmt"
@@ -20,8 +20,9 @@ var (
 	ErrAuthInvalid         = fmt.Errorf("invalid authentication")
 	ErrInvalidJson         = fmt.Errorf("invalid JSON")
 	ErrInternalServerError = fmt.Errorf("internal server error")
-	ErrValidSessionExists  = fmt.Errorf("valid session exists")  //TODO: this is not really an error
-	ErrUserCreation        = fmt.Errorf("failed to create user") //TODO: this is not really an error
+	ErrValidSessionExists  = fmt.Errorf("valid session exists")      //TODO: this is not really an error
+	ErrUserCreation        = fmt.Errorf("failed to create user")     //TODO: this is not really an error
+	ErrPasswordSalt        = fmt.Errorf("can't match password salt") //TODO: this is not really an error
 )
 
 // TODO: Placeholder, finish implementation
